@@ -43,6 +43,7 @@ a {
   right: 0;
   z-index: 100;
   padding: 24px 48px;
+  background-color: var(--burgundy);
 }
 
 .navbar .container {
@@ -142,7 +143,21 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px 0 20px;
   gap: 40px;
+  position: relative;
+}
+
+.gallery-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .gallery-row {
